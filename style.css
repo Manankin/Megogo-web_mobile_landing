@@ -85,7 +85,7 @@ body {
   background-size: cover;
 }
 
-.entry-page::before {
+.entry-page::after {
   content: '';
   position: absolute;
   top: 0;
@@ -93,7 +93,7 @@ body {
   left: 0;
   right: 0;
   opacity: 0.5;
-  z-index: 0;
+  z-index: 1;
 }
 
 .entry-page__container {
@@ -170,7 +170,7 @@ body {
 }
 /* #endregion */
 
-/* #region 3 */
+/* #region page-3 */
 .page-3 {
   position: relative;
   box-sizing: border-box;
@@ -299,7 +299,7 @@ body {
 
 /* #endregion */
 
-/* #region page 4 */
+/* #region page-4 */
 .page-4 {
   position: relative;
 }
