@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var sections = $("#1, #2, #3, #4, #5");
+
+      sections.wrap("<div class='section'></div>");
+      $(".section").wrapAll("<div id='fullpage'></div>");
+
+      window.page = $('#fullpage').fullpage({
+        scrollingSpeed: 600,
+        easing: "easeInOutCubic",
+        keyboardScrolling: true,
+        css3: true,
+        scrollBar: true,
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <section id="1" class="screen-block entry-page">
+      <div class="entry-page__container">
+        <h1 class="entry-page__title">
+          Дивіться кіно та ТБ без реклами в єдиній передплаті
+        </h1>
+        <p class="entry-page__text">
+          Популярні телеканали та величезна бібліотека фільмів, серіалів, мультфільмів, трансляцій у єдиній передплаті
+        </p>
+      </div>
+    </section>
+    <section id="2" class="screen-block prepaid-page">
+      <div class="prepaid-page__container">
+        <h2 class="prepaid-page__title">
+          Дивіться фільми
+          <br>
+          без інтернету
+        </h2>
+        <p class="prepaid-page__text">
+          Завантаження фільмів та серіалів
+          <br>
+          на ваш пристрій
+        </p>
+      </div>
+      <div class="prepaid-page__image">
+        <img src="./images/iPhone.webp" alt="frame of film on phone">
+      </div>
+    </section>
+    <section id="3" class="screen-block page-3">
+      <div class="page-3__container">
+        <div class="info-block">
+          <span class="info-block__text">Передплата</span>
+          <span class="info-block__accent">Оптимальна</span>
+        </div>
+
+        <div class="info-block page-3__second">
+          <span class="info-block__main">
+            10000 фільмів та 160+ каналів
+          </span>
+          <span class="info-block__text">
+            Голівудська класика та свіжі
+            <br>
+            кіно-новинки за підпискою,
+            <br>
+            прямі футбольні трансляції та понад 160 каналів
+          </span>
+        </div>
+
+        <div class="page-3-footer-block page-3__footer">
+          <span class="page-3-footer-block__accent">від 1 грн.</span>
+          <span class="btn btn--wide page-3-footer-block__btn">спробувати</span>
+          <div class="page-3-footer-block__price-info">
+            <span>Перші 14 Днів за 1 Грн.</span>
+            <br>
+            <span>Далі - 97 Грн/Міс.</span>
+          </div>
+          <span class="page-3-footer-block__additional">Детальніше</span>
+        </div>
+      </div>
+    </section>
+    <section id="4" class="screen-block page-4">
+      <div class="page-4__info">
+        <h2 class="page-4__info__title">Подарунки від партнерів при кожному продовженні передплати</h2>
+        <span class="page-4__info__text">Сертифікати на знижки від WOG, Сушія, Антошка та Єва</span>
+      </div>
+      <div class="page-4__discount sales-block">
+        <div class="sales-block__item">
+          <img src="./images/wog.webp" alt="">
+          <span>-80₴</span>
+        </div>
+        <div class="sales-block__item">
+          <img src="./images/antoshka.webp" alt="">
+          <span>-20%</span>
+        </div>
+        <div class="sales-block__item">
+          <img src="./images/eva.webp" alt="">
+          <span>-20%</span>
+        </div>
+        <div class="sales-block__item">
+          <img src="./images/sushia.webp" alt="">
+          <span>-300₴</span>
+        </div>
+      </div>
+    </section>
+    <section id="5" class="screen-block page-5">
+      <div class="page-5__container">
+        <div class="page-5__title">
+          Підключіть передплату за 1грн. та отримуйте:
+        </div>
+        <div class="page-5__advertisment">
+          <div class="page-5__adv-item">
+            <span class="page-5__adv-item-title">
+              ТВ-архів
+            </span>
+            <span class="page-5__adv-item-text">
+              телепередач до 14 днів
+            </span>
+          </div>
+          <div class="page-5__adv-item">
+            <span class="page-5__adv-item-title">
+              Full HD
+            </span>
+            <span class="page-5__adv-item-text">
+              якість тільки за передплатою
+            </span>
+          </div>
+          <div class="page-5__adv-item">
+            <span class="page-5__adv-item-title">
+              10% знижка
+            </span>
+            <span class="page-5__adv-item-text">
+              на прем'єри
+            </span>
+          </div>
+          <div class="page-5__adv-item">
+            <span class="page-5__adv-item-title">
+              5 пристроїв
+            </span>
+            <span class="page-5__adv-item-text">
+              в одній передплаті
+            </span>
+          </div>
+          <div class="page-5__adv-item">
+            <span class="page-5__adv-item-title">
+              Без реклами
+            </span>
+            <span class="page-5__adv-item-text">
+              на всіх фільмах та мультфільмах
+            </span>
+          </div>
+        </div>
+        <div class="page-5__btn">
+          <span class="btn btn--narrow">підключити</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
